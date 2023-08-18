@@ -9,6 +9,7 @@
 	--light: #F1F1F1;
 	--label: #111;
     background: var(--dark);
+    transition: background 0.2s;
 }
 
 .light {
@@ -27,7 +28,6 @@
 }
 
 #label {
-
     background-color: var(--label);
     padding: 4px;
     display: flex;
@@ -62,13 +62,27 @@ button {
     height: 86.31px;
     border: 0;
     border-radius: 50%;
-    margin: auto;
 
     position: absolute;
     z-index: 1;
     right: 4%;
     top: 50%;
     transform: translateY(-50%);
+    animation: slide-left 0.333s forwards;
+}
+
+.light button {
+    width: 86.31px;
+    height: 86.31px;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slide-right 0.333s forwards;
 }
 
 button:hover {
@@ -77,18 +91,18 @@ button:hover {
 
 @keyframes slide-left {
     from {
-        left: 50%
+        left: 0%
     }
     to {
-        left: 0%
+        left: 59%
     }
 }
 
 @keyframes slide-right {
     from {
-        left: 0%
+        left: 58%
     }
     to {
-        left: 50%
+        left: 4%
     }
 }
