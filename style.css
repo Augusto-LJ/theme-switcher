@@ -74,3 +74,21 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+@keyframes slide-left {
+    from {
+        left: 50%
+    }
+    to {
+        left: 0%
+    }
+}
+
+@keyframes slide-right {
+    from {
+        left: 0%
+    }
+    to {
+        left: 50%
+    }
+}
