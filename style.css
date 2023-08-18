@@ -9,3 +9,46 @@
 	--light: #F1F1F1;
 	--label: #111;
 }
+
+body {
+    background: var(--dark);
+}
+
+#switcher {
+    width: 235.38px;
+    height: 102px;
+    
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#label {
+
+    background-color: var(--label);
+    padding: 4px;
+    display: flex;
+    position: relative;
+    border-radius: 59px;
+    width: 235.38px;
+    height: 102px;
+}
+
+button {
+    border: 1px solid green;
+    width: 86.31px;
+    height: 86.31px;
+    border: 0;
+    border-radius: 50%;
+    margin: auto;
+
+    position: absolute;
+    z-index: 1;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
