@@ -8,16 +8,16 @@
 	--dark: #292C35;
 	--light: #F1F1F1;
 	--label: #111;
+    background: var(--dark);
 }
 
-body {
-    background: var(--dark);
+.light {
+    background: var(--light);
 }
 
 #switcher {
     width: 235.38px;
     height: 102px;
-    
     
     position: absolute;
     left: 50%;
@@ -69,5 +69,8 @@ button {
     right: 4%;
     top: 50%;
     transform: translateY(-50%);
-    
+}
+
+button:hover {
+    cursor: pointer;
 }
