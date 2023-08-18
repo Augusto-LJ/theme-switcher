@@ -37,8 +37,27 @@ body {
     height: 102px;
 }
 
+#lua {
+    position: absolute;
+    width: 86.31px;
+    height: 86.31px;
+
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#sol {
+    position: absolute;
+    width: 86.31px;
+    height: 86.31px;
+
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 button {
-    border: 1px solid green;
     width: 86.31px;
     height: 86.31px;
     border: 0;
